@@ -49,12 +49,12 @@ googleAnalytics = ""
       url = "events"
 
     [[params.navigation.links]]
-      name = "RobotRobot stuff"
+      name = "site map"
       url = "site"
 
-    [[params.navigation.links]]
-      name = "Elements"
-      url = "elements.html"
+#    [[params.navigation.links]]
+#      name = "Elements"
+#      url = "elements.html"
 
     # Add custom links here by uncommenting code below. To remove links just delete
     # the [[params.navigation.links]] map associated with that link. Copy and paste
@@ -107,7 +107,7 @@ googleAnalytics = ""
 
     [[params.tiles.showcase]]
       title = "Prepare"
-      subtitle = "Avid learning (all ages)"
+      subtitle = "Avid learning (ages 13+)"
       image = "img010.jpg"
       url = "site/prepare/"
 
