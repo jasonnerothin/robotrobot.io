@@ -95,7 +95,7 @@ googleAnalytics = ""
 
     [[params.tiles.showcase]]
       title = "Build"
-      subtitle = "Curcuits & programming (ages 10+)"
+      subtitle = "Circuits & programming (ages 10+)"
       image = "build0.png"
       url = "site/build/"
 

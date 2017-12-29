@@ -4,11 +4,23 @@ title: "Build"
 date: 2017-12-27T20:34:46-06:00
 draft: false
 ---
+### Circuits & Programming (Ages 10+)
 
-#### Age: 10+
+Much homework now behind them, our engineers are ready to apply higher-order thinking to real-world problems.
 
-The hallmark of a successful engineer is not aptitude.
+By the end of their first day, they will have created programmable circuits and robots. Made with friends.
 
-The best hackers are curious first, team players second, and blessed by intellectualism later on. 
+#### Inputs
+
+- Curiosity
+- Enthusiasm
+- Teamwork
+- [Arduino](https://arduino.cc) 
+
+#### Outputs
+
+- Programming
+- Electical engineering
+- Robots!
 
 Check out [upcoming events](/events) for your devloping engineer.

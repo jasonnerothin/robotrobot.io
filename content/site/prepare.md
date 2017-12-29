@@ -4,21 +4,25 @@ date: 2017-12-27T20:34:28-06:00
 draft: false
 ---
 
-#### Age: 13+
+### Avid learning (Ages 13+)
 
-Adulthood is competitive. Take your engineering to the next level.
+Adulthood is competitive: Be prepared.
 
-###### Areas
+We know and teach [Raspberry Pi](https://www.raspberrypi.org/).
+
+#### Activites
 
 1. SAT/ACT
+1. Competitive robotics
 1. GMAT
+1. Career prep 
 
-###### Subjects
+#### Subjects
 
 1. Mathematics
 1. Computer Science
 1. Electronic Engineering
-1. Chemistry
 1. Biology
+1. Chemistry
 
-Send us an email on our main page for [customized training](/). 
+Fill out the contact form for [customized training](/). 
