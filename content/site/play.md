@@ -1,6 +1,8 @@
 ---
 title: "Play"
 #slug: "site"
+subtitle: "Robots & Young Engineers (Ages 7+)"
+image: "play5.png"
 date: 2017-12-27T19:21:34-06:00
 draft: false
 ---
@@ -21,7 +23,7 @@ This is not hard: Children are natural robot builders and complex problem solver
 #### Outputs
 
 - Pet robots
-- High-level programming
+- High-level programmers
 - Fun!
 
 Check out [upcoming events](/events) for your happy engineer.
