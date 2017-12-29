@@ -91,13 +91,13 @@ googleAnalytics = ""
       title = "Play"
       subtitle = "Robots & young engineers (ages 6+)"
       image = "play0.png"
-      url = "site/play"
+      url = "site/play/"
 
     [[params.tiles.showcase]]
       title = "Build"
       subtitle = "Curcuits & programming (ages 10+)"
       image = "build0.png"
-      url = "site/build"
+      url = "site/build/"
 
     [[params.tiles.showcase]]
       title = "Create"
@@ -109,7 +109,7 @@ googleAnalytics = ""
       title = "Prepare"
       subtitle = "Avid learning (all ages)"
       image = "img010.jpg"
-      url = "site/prepare"
+      url = "site/prepare/"
 
   [params.site]
     # All site defined in their own files. You can find example blogs

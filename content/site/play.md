@@ -1,6 +1,6 @@
 ---
 title: "Play"
-slug: "site"
+#slug: "site"
 date: 2017-12-27T19:21:34-06:00
 draft: false
 ---
