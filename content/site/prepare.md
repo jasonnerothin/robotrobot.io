@@ -6,9 +6,9 @@ draft: false
 
 ### Avid learning (Ages 13+)
 
-Adulthood is competitive: Be prepared.
+We know and teach [Raspberry Pi](https://www.raspberrypi.org/) and most modern programming languages.
 
-We know and teach [Raspberry Pi](https://www.raspberrypi.org/).
+Adulthood is competitive: Be prepared.
 
 #### Activites
 
