@@ -81,7 +81,7 @@ googleAnalytics = ""
   [params.banner]
     # To change the background image on the homepg banner, replace 'banner.jpg' in
     # the 'static/img' folder.
-    title = "Build Together"
+    title = "Kids Building Robots"
     subtitle = "Experiential Engineering. Technology for all."
     buttonText = "Learn more"
     image = "img100.jpg" # "banner.jpg"
