@@ -49,7 +49,7 @@ googleAnalytics = ""
       url = "events"
 
     [[params.navigation.links]]
-      name = "RobotRobot site"
+      name = "RobotRobot stuff"
       url = "site"
 
     [[params.navigation.links]]
