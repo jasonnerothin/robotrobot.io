@@ -49,6 +49,10 @@ googleAnalytics = ""
       url = "experiences"
 
     [[params.navigation.links]]
+      name = "People"
+      url = "people"
+    
+    [[params.navigation.links]]
       name = "site map"
       url = "site"
 
@@ -126,8 +130,8 @@ googleAnalytics = ""
 Girls & boys. Teens & young adults. 
 Play, build, create, prepare.
 Come hack with us."""
-    buttonText = "Learn more"
-    url = "site"
+#    buttonText = "Learn more"
+#    url = "site"
 
   # Contact section
   [params.contact]
@@ -177,7 +181,7 @@ Come hack with us."""
 
     [[params.footer.social]]
       icon = "fa-facebook"
-      url= "https://www.facebook.com"
+      url= "https://www.facebook.com/robotrobot.io"
       label = "Facebook"
 
 #    [[params.footer.social]]
@@ -190,13 +194,13 @@ Come hack with us."""
       url= "https://www.github.com"
       label = "GitHub"
 
-    [[params.footer.social]]
-      icon = "fa-linkedin"
-      url= "https://www.linkedin.com"
-      label = "LinkedIn"
+#    [[params.footer.social]]
+#      icon = "fa-linkedin"
+#      url= "https://www.linkedin.com"
+#      label = "LinkedIn"
 
     [[params.footer.quicklinks]]
       text = "Design: "
-      url= "http://ubiquibit.com"
-      alt = "Ubiquibit, Inc."
+      url= "https://www.html5up.net"
+      alt = "HTML5 UP"
 
