@@ -26,4 +26,4 @@ Adulthood is competitive: Be prepared.
 1. Biology
 1. Chemistry
 
-Fill out the contact form for [customized training](/). 
+Fill out the contact form for [customized training](/#contact). 

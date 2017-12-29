@@ -53,6 +53,10 @@ googleAnalytics = ""
       url = "people"
     
     [[params.navigation.links]]
+      name = "Contact us"
+      url = "#contact"
+    
+    [[params.navigation.links]]
       name = "site map"
       url = "site"
 
@@ -126,12 +130,10 @@ googleAnalytics = ""
   [params.two]
     enable = true
     title = "All people included"
-    subtitle = """Young people learn. 
-Girls & boys. Teens & young adults. 
-Play, build, create, prepare.
-Come hack with us."""
-#    buttonText = "Learn more"
-#    url = "site"
+    p0 = "Young people learn."
+    p1 = "Girls & boys. Kids, teens & young adults."
+    p3 = "Play, build, create."
+    p4 = "Come hack with us."
 
   # Contact section
   [params.contact]
