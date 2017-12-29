@@ -123,9 +123,9 @@ googleAnalytics = ""
     enable = true
     title = "All people included"
     subtitle = """Young people are excellent builders. 
-Girls & boys. Teens, young adults & beyond. 
-No matter the ethnic background, creed, or intelligence. 
-All can build. All can create. Come hack with us."""
+Girls & boys. Teens & young adults. 
+All can play. All can build. All can create. All can prepare.
+Come hack with us."""
     buttonText = "Learn more"
     url = "site"
 
