@@ -30,7 +30,7 @@ googleAnalytics = ""
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
-    text = "Please visit [this page](/)"
+    text = "Please visit [this pg](/)"
 
   # Navigation Section
   [params.navigation]
@@ -49,8 +49,8 @@ googleAnalytics = ""
       url = "events"
 
     [[params.navigation.links]]
-      name = "Pages"
-      url = "pages"
+      name = "RobotRobot site"
+      url = "site"
 
     [[params.navigation.links]]
       name = "Elements"
@@ -66,7 +66,7 @@ googleAnalytics = ""
     # Button Style 1
 #    [[params.navigation.button1]]
 #      name = "Get Started"
-#     url = "pages"
+#     url = "site"
 
     # Button Style 2
 #    [[params.navigation.button2]]
@@ -75,7 +75,7 @@ googleAnalytics = ""
 
   # Banner section
   [params.banner]
-    # To change the background image on the homepage banner, replace 'banner.jpg' in
+    # To change the background image on the homepg banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Build Together"
     subtitle = "Experiential Engineering. Technology for all."
@@ -91,13 +91,13 @@ googleAnalytics = ""
       title = "Play"
       subtitle = "Robots & young engineers (ages 6+)"
       image = "play0.png"
-      url = "pages/play"
+      url = "site/play"
 
     [[params.tiles.showcase]]
       title = "Build"
       subtitle = "Curcuits & programming (ages 10+)"
       image = "build0.png"
-      url = "pages/build"
+      url = "site/build"
 
     [[params.tiles.showcase]]
       title = "Create"
@@ -109,14 +109,14 @@ googleAnalytics = ""
       title = "Prepare"
       subtitle = "Avid learning (all ages)"
       image = "img010.jpg"
-      url = "pages/prepare"
+      url = "site/prepare"
 
-  [params.pages]
-    # All pages defined in their own files. You can find example blogs
-    # at 'exampleSite/content/pages'. Copy the 'blogs' folder into the 'content' directory
+  [params.site]
+    # All site defined in their own files. You can find example blogs
+    # at 'exampleSite/content/site'. Copy the 'blogs' folder into the 'content' directory
     # at the root of this Hugo site.
     # For more informtion take a look at the README.
-    # To add more pages just copy and paste the code.
+    # To add more site just copy and paste the code.
 
   # Section Type Two
   [params.two]
@@ -127,7 +127,7 @@ Girls & boys. Teens, young adults & beyond.
 No matter the ethnic background, creed, or intelligence. 
 All can build. All can create. Come hack with us."""
     buttonText = "Learn more"
-    url = "pages"
+    url = "site"
 
   # Contact section
   [params.contact]

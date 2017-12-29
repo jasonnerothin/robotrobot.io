@@ -1,6 +1,6 @@
 ---
 title: "Build"
-slug: "pages"
+slug: "site"
 date: 2017-12-27T20:34:46-06:00
 draft: false
 ---
