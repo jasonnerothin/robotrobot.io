@@ -16,13 +16,13 @@ By the end of their first day, they will have created programmable circuits and 
 - Curiosity
 - Enthusiasm
 - Teamwork
-- [Arduino](https://arduino.cc) 
+- STEM platforms, including [Arduino](https://arduino.cc) 
 
 #### Outputs
 
 - Programming
 - Electical engineering
-- Robots!
+- (Take home) Robots
 - Fun
 
 Check out [upcoming events](/events) for your devloping engineer.

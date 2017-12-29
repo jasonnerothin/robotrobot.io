@@ -45,8 +45,8 @@ googleAnalytics = ""
       url = "#"
 
     [[params.navigation.links]]
-      name = "Events"
-      url = "events"
+      name = "Experiences"
+      url = "experiences"
 
     [[params.navigation.links]]
       name = "site map"
@@ -100,10 +100,10 @@ googleAnalytics = ""
       url = "site/build/"
 
     [[params.tiles.showcase]]
-      title = "Create"
-      subtitle = "Guided events"
+      title = "Experiences"
+      subtitle = "Guided events, building robots"
       image = "pic03.jpg"
-      url = "events"
+      url = "experiences"
 
     [[params.tiles.showcase]]
       title = "Prepare"

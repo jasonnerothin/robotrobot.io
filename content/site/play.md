@@ -18,7 +18,7 @@ This is not hard: Children are natural robot builders and complex problem solver
 - Eager hearts
 - Team play
 - Developing minds
-- [Ozobot](https://ozobot.com/)
+- STEM platforms, including [Ozobot](https://ozobot.com/)
 
 #### Outputs
 
@@ -27,3 +27,4 @@ This is not hard: Children are natural robot builders and complex problem solver
 - Fun!
 
 Check out [upcoming events](/events) for your happy engineer.
+
