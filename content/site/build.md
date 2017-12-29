@@ -25,4 +25,4 @@ By the end of their first day, they will have created programmable circuits and 
 - (Take home) Robots
 - Fun
 
-Check out [upcoming events](/events) for your devloping engineer.
+Check out [upcoming events](/experiences) for your devloping engineer.

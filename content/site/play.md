@@ -26,5 +26,5 @@ This is not hard: Children are natural robot builders and complex problem solver
 - High-level programmers
 - Fun!
 
-Check out [upcoming events](/events) for your happy engineer.
+Check out [upcoming events](/experiences) for your happy engineer.
 
