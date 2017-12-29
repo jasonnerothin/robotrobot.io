@@ -89,7 +89,7 @@ googleAnalytics = ""
     
     [[params.tiles.showcase]]
       title = "Play"
-      subtitle = "Robots & young engineers (ages 6+)"
+      subtitle = "Robots & young engineers (ages 7+)"
       image = "play0.png"
       url = "site/play/"
 
@@ -101,13 +101,13 @@ googleAnalytics = ""
 
     [[params.tiles.showcase]]
       title = "Create"
-      subtitle = "Guided events (ages 6+)"
+      subtitle = "Guided events"
       image = "pic03.jpg"
       url = "events"
 
     [[params.tiles.showcase]]
       title = "Prepare"
-      subtitle = "Avid learning (ages 13+)"
+      subtitle = "Avid learning (ages 14+)"
       image = "img010.jpg"
       url = "site/prepare/"
 
@@ -122,9 +122,9 @@ googleAnalytics = ""
   [params.two]
     enable = true
     title = "All people included"
-    subtitle = """Young people are excellent builders. 
+    subtitle = """Young people learn. 
 Girls & boys. Teens & young adults. 
-All can play. All can build. All can create. All can prepare.
+Play, build, create, prepare.
 Come hack with us."""
     buttonText = "Learn more"
     url = "site"
