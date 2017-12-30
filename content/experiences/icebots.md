@@ -18,5 +18,5 @@ Deliverables:
 - Robot assembly kit (reusable)
 - Knowledge (reusable)
 - T-shirt
-- Discount code for [springbots](/experiences/springbots)
+- Discount for [springbots](#springbots)
 

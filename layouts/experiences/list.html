@@ -39,12 +39,13 @@
                             <h3>{{ .Params.catchy }}</h3>
                             <h5>{{ .Content }}</h5>
                         </header>
-                        <ul>
-                            <li>when: {{ .Params.when }}</li>
-                            <li>who: {{ .Params.who }}</li>
-                            <li>where: {{ .Params.where }}</li>
-                            <li>how much: {{ .Params.howmuch }}</li>
-                        </ul>
+                        <dl>
+                            <dt>Details</dt>
+                            <dd>when: {{ .Params.when }}</dd>
+                            <dd>who: {{ .Params.who }}</dd>
+                            <dd>where: {{ .Params.where }}</dd>
+                            <!--li>how much: {{ .Params.howmuch }}</li-->
+                        </dl>
                         <ul class="actions">
                             <li><a href="{{ .Title }}" class="button">Register</a></li>
                         </ul>

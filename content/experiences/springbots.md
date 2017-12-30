@@ -4,7 +4,7 @@ date: 2017-08-29T17:23:05-06:00
 slug: "experiences"
 image: "springbot.jpg"
 draft: false
-catchy: "Springbots Spring Break Camp"
+catchy: "Springbots Break Camp"
 subtitle: "Robots & Programming: An enriching Spring Break"
 when: "March 20-26, 2018"
 who: "Ages: 10+"
