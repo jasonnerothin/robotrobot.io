@@ -29,9 +29,9 @@ googleAnalytics = ""
   image = ""
 
   # 404 error customization
-  [params.error404]
-    heading = "Page couldn't be found"
-    text = "Please visit [this pg](/)"
+#  [params.error404]
+#    heading = "Page couldn't be found"
+#    text = "Please visit [this pg](/)"
 
   # Navigation Section
   [params.navigation]
@@ -42,24 +42,24 @@ googleAnalytics = ""
     # logo = "logo.png"
 
     [[params.navigation.links]]
-      name = "Home"
-      url = "#"
-
-    [[params.navigation.links]]
       name = "Experiences"
       url = "experiences"
 
+    [[params.navigation.links]]
+      name = "Contact"
+      url = "http://localhost:1313/#contact"
+    
     [[params.navigation.links]]
       name = "People"
       url = "people"
     
     [[params.navigation.links]]
-      name = "Contact us"
-      url = "#contact"
-    
-    [[params.navigation.links]]
-      name = "site map"
-      url = "site"
+      name = "Home"
+      url = "#"
+
+#    [[params.navigation.links]]
+#      name = "site map"
+#      url = "site"
 
   # Banner section
   [params.banner]
