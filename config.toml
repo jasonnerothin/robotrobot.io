@@ -3,6 +3,7 @@ baseURL = "http://robotrobot.io/"
 languageCode = "en-us"
 title = "RobotRobot.io"
 theme = "forty"
+log = true
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
@@ -77,13 +78,13 @@ googleAnalytics = ""
     [[params.tiles.showcase]]
       title = "Play"
       subtitle = "Robots & young engineers (ages 7+)"
-      image = "play0.png"
+      image = "site/play0.png"
       url = "site/play/"
 
     [[params.tiles.showcase]]
       title = "Build"
       subtitle = "Circuits & programming (ages 10+)"
-      image = "build0.png"
+      image = "site/build0.png"
       url = "site/build/"
 
     [[params.tiles.showcase]]
@@ -95,7 +96,7 @@ googleAnalytics = ""
     [[params.tiles.showcase]]
       title = "Prepare"
       subtitle = "Avid learning (ages 14+)"
-      image = "img010.jpg"
+      image = "site/prepare0.jpg"
       url = "site/prepare/"
 
   [params.site]
