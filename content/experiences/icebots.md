@@ -4,8 +4,19 @@ date: 2017-12-29T13:42:01-06:00
 slug: "experiences"
 image: "icebots.png"
 draft: false
+catchy: "Icebots Daycamp"
+subtitle: "Building robots in the heart of winter."
+when: "January 15, 2018"
+who: "Ages: 10+"
+where: "University Research Park, 505 South Rosa Rd, Madison WI 53719"
+howmuch: "$256.00"
 ---
-description: Kids building robots (Ages: 10+) in the heart of winter.
-Location: University Research Park, 505 S. Rosa Rd, Madison WI 53719
-Cost: $256
-Ages: 10+
+A day-long, interactive robot creation experience with demo mixer at the end of the day.
+
+Deliverables:
+
+- Robot assembly kit (reusable)
+- Knowledge (reusable)
+- T-shirt
+- Discount code for [springbots](/experiences/springbots)
+
