@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -x
+#!/bin/bash -x
 
 # execute this script from the directory containing this script, please
 
@@ -45,4 +45,4 @@ fi
 
 echo "Running ${siteidentifier} from ${robotrobotdir} at ${bindiface}:${bindport}..."
 #docker run --rm -it -v ${robotrobotdir}:/src -p ${bindport}:1313 -u hugo jguyomard/hugo-builder hugo server -w --bind=${bindiface}
-docker run --rm -v ${robotrobotdir}:/src -p ${bindport}:1313 -u hugo jguyomard/hugo-builder hugo server -w --bind=${bindiface}
+sudo docker run --rm -v ${robotrobotdir}:/src -p ${bindport}:1313 -u hugo jguyomard/hugo-builder hugo server -w --bind=${bindiface}
