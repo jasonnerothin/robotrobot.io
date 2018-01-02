@@ -47,7 +47,7 @@ googleAnalytics = ""
 
     [[params.navigation.links]]
       name = "Contact"
-      url = "http://localhost:1313/#contact"
+      url = "http://robotrobot.io:2718/#contact"
     
     [[params.navigation.links]]
       name = "People"
