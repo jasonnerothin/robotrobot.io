@@ -1,5 +1,6 @@
 ---
 title: "Prepare"
+#slug: "site"
 image: prepare0.jpg
 date: 2017-12-27T20:34:28-06:00
 draft: false
