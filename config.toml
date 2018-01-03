@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://robotrobot.io:2718/"
+baseURL = ""
 #languageCode = "en-us"
 title = "RobotRobot.io"
 theme = "forty"
