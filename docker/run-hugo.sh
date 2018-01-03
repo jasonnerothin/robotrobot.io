@@ -45,4 +45,8 @@ else
 fi
 
 echo "Running ${siteidentifier} from ${robotrobotdir} at ${bindiface}:${bindport}..."
-sudo docker run -d --rm -v ${robotrobotdir}:/src -p ${bindport}:1313 -u hugo jguyomard/hugo-builder hugo server -w --bind=${bindiface} --baseURL ${baseurl}
+sudo docker run \
+    -d --rm -v ${robotrobotdir}:/src \
+    -p ${bindport}:1313 -u hugo \
+    jguyomard/hugo-builder \
+    hugo server -w --bind=${bindiface} --baseURL ${baseurl}
