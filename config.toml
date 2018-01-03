@@ -29,9 +29,9 @@ googleAnalytics = ""
   image = ""
 
   # 404 error customization
-#  [params.error404]
-#    heading = "Page couldn't be found"
-#    text = "Please visit [this pg](/)"
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
 
   # Navigation Section
   [params.navigation]
@@ -57,9 +57,23 @@ googleAnalytics = ""
       name = "Home"
       url = "#"
 
-#    [[params.navigation.links]]
-#      name = "site map"
-#      url = "site"
+    # Add custom links here by uncommenting code below. To remove links just delete
+    # the [[params.navigation.links]] map associated with that link. Copy and paste
+    # code below if you need more links. Buttons work in the same way.
+    # [[params.navigation.links]]
+    #    name = "NameOfLink"
+    #    url = "UrlOfLink"
+
+    # Button Style 1
+#    [[params.navigation.button1]]
+#      name = "Get Started"
+#      url = "blogs"
+
+    # Button Style 2
+#    [[params.navigation.button2]]
+#      name = "Log In"
+#      url = "#"
+
 
   # Banner section
   [params.banner]
@@ -68,7 +82,6 @@ googleAnalytics = ""
     title = "Kids Building Robots"
     subtitle = "Experiential Engineering. Technology for all."
     buttonText = "Learn more"
-    image = "img100.jpg" 
 
   # Tiles Section
   [params.tiles]
@@ -79,13 +92,13 @@ googleAnalytics = ""
       title = "Play"
       subtitle = "Robots & young engineers (ages 7+)"
       image = "site/play0.png"
-      url = "site/play/"
+      url = "site/play"
 
     [[params.tiles.showcase]]
       title = "Build"
       subtitle = "Circuits & programming (ages 10+)"
       image = "site/build0.png"
-      url = "site/build/"
+      url = "site/build"
 
     [[params.tiles.showcase]]
       title = "Experiences"
@@ -97,7 +110,7 @@ googleAnalytics = ""
       title = "Prepare"
       subtitle = "Avid learning (ages 14+)"
       image = "site/prepare0.jpg"
-      url = "site/prepare/"
+      url = "site/prepare"
 
   [params.site]
     # All blogs defined in their own files. You can find example blogs
@@ -151,7 +164,7 @@ googleAnalytics = ""
     title = "RobotRobot.io"
     street = "505 S Rosa Rd"
     city = "Madison WI 53719"
-    #country = "Country"
+    country = "US"
 
   # Footer section
   [params.footer]
@@ -187,4 +200,3 @@ googleAnalytics = ""
       text = "Design: "
       url= "https://www.html5up.net"
       alt = "HTML5 UP"
-
