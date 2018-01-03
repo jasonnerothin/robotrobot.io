@@ -13,6 +13,5 @@ sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu
 
 # setup nginx
 
-source ../docker/nginxvars.sh
 
 sudo mkdir -p ${nginxlocalconf}

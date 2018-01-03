@@ -5,23 +5,19 @@
 readonly scriptarg="$1"
 readonly currentdir=$(pwd)
 
-readonly bindport=2718
-#readonly bindport="$2"
-
-if [ -z "${bindport}" ];
-then
-   echo "ERROR: Need a bindport." ;
-   exit 0
-fi
+readonly localport=2718
+readonly hugoport=1414
 
 readonly bindiface=0.0.0.0
 readonly siteidentifier='robotrobot.io'
-readonly baseurl=http://${siteidentifier}:${bindport}
+#readonly siteidentifier=localhost
+readonly baseurl=http://${siteidentifier}
 
 # work dir for new builds from github
-readonly workdir=$(mktemp -d /tmp/robotrobot.io-XXXXXXX)
-readonly robotrobotdir=${workdir}/${siteidentifier}
-readonly themedir=${robotrobotdir}/themes
+readonly workdir=$(mktemp -d /tmp/${siteidentifier}-XXXXXXX)
+readonly localsrcdir=${workdir}/${siteidentifier}
+readonly themedir=${localsrcdir}/themes
+readonly localport=3141
 
 # temp dirs to skip git
 readonly cachedsitedir=/tmp/${siteidentifier}
@@ -41,12 +37,12 @@ else
    cd ${themedir} ;
    git clone https://github.com/MarcusVirg/forty ;
    cd ${currentdir} ;
-   rsync -avh ${robotrobotdir} /tmp ;
+   rsync -avh ${localsrcdir} /tmp ;
 fi
 
-echo "Running ${siteidentifier} from ${robotrobotdir} at ${bindiface}:${bindport}..."
+echo "Running ${siteidentifier} from ${localsrcdir} at ${bindiface}:${hugoport}..."
 sudo docker run \
-    -d --rm -v ${robotrobotdir}:/src \
-    -p ${bindport}:1313 -u hugo \
+    -d --rm -v ${localsrcdir}:/src \
+    -p ${localport}:${hugoport} -u hugo \
     jguyomard/hugo-builder \
-    hugo server -w --bind=${bindiface} --baseURL ${baseurl}
+    hugo server -w --bind=${bindiface} --baseURL ${baseurl} --port ${hugoport}
