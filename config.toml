@@ -1,6 +1,6 @@
 # Site settings
 baseURL = ""
-#languageCode = "en-us"
+languageCode = "en-us"
 title = "RobotRobot.io"
 theme = "forty"
 log = true
@@ -18,7 +18,7 @@ googleAnalytics = ""
 
   # Provide your metadata here.
   name = "webmaster"
-  description = "robots@ubiquibit.com"
+  description = "robotrobot.io webmaster"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -47,12 +47,12 @@ googleAnalytics = ""
 
     [[params.navigation.links]]
       name = "Contact"
-      url = "http://robotrobot.io:2718/#contact"
-    
+      url = "#contact"
+
     [[params.navigation.links]]
       name = "People"
       url = "people"
-    
+
     [[params.navigation.links]]
       name = "Home"
       url = "#"
@@ -112,7 +112,7 @@ googleAnalytics = ""
       image = "site/prepare0.jpg"
       url = "site/prepare"
 
-  [params.site]
+  [params.blog]
     # All blogs defined in their own files. You can find example blogs
     # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
     # at the root of this Hugo site.
@@ -147,7 +147,7 @@ googleAnalytics = ""
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-    formEmail = "robots@ubiquibit.com"
+    # formEmail = "robots@ubiquibit.com"
 
     # Contact Section
     # You can add multiple emails, phone numbers, or addresses
