@@ -16,6 +16,7 @@ fi
 
 readonly bindiface=0.0.0.0
 readonly siteidentifier='robotrobot.io'
+readonly baseurl=http://${siteidentifier}:${bindport}
 
 # work dir for new builds from github
 readonly workdir=$(mktemp -d /tmp/robotrobot.io-XXXXXXX)
@@ -44,4 +45,4 @@ else
 fi
 
 echo "Running ${siteidentifier} from ${robotrobotdir} at ${bindiface}:${bindport}..."
-sudo docker run -d --rm -v ${robotrobotdir}:/src -p ${bindport}:1313 -u hugo jguyomard/hugo-builder hugo server -w --bind=${bindiface}
+sudo docker run -d --rm -v ${robotrobotdir}:/src -p ${bindport}:1313 -u hugo jguyomard/hugo-builder hugo server -w --bind=${bindiface} --baseURL ${baseurl}
