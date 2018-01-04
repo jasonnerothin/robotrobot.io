@@ -2,47 +2,53 @@
 
 # execute this script from the directory containing this script, please
 
-readonly scriptarg="$1"
-readonly currentdir=$(pwd)
+readonly script_arg="$1"
+readonly current_dir=$(pwd)
 
-readonly localport=2718
-readonly hugoport=1414
+readonly host_port=2718
+readonly hugo_port=1414
 
-readonly bindiface=0.0.0.0
-readonly siteidentifier='robotrobot.io'
-#readonly siteidentifier=localhost
-readonly baseurl=http://${siteidentifier}
+readonly bind_iface=0.0.0.0
+readonly prod_siteidentifier='robotrobot.io'
+readonly dev_site_identifier=localhost
+readonly github_url=https://github.com/jasonnerothin/robotrobot.io.git
+readonly github_theme_url=https://github.com/MarcusVirg/forty
+
+readonly site_identifier=${dev_site_identifier}
+readonly base_url=http://${site_identifier}
 
 # work dir for new builds from github
-readonly workdir=$(mktemp -d /tmp/${siteidentifier}-XXXXXXX)
-readonly localsrcdir=${workdir}/${siteidentifier}
-readonly themedir=${localsrcdir}/themes
-readonly localport=3141
+readonly work_dir=$(mktemp -d /tmp/${site_identifier}-XXXXXXX)
+readonly local_srcdir=${work_dir}
+readonly theme_dir=${local_srcdir}/themes
 
 # temp dirs to skip git
-readonly cachedsitedir=/tmp/${siteidentifier}
-if [ ! -d ${cachedsitedir} ]; then mkdir ${cachedsitedir} ; fi
+readonly cached_site_dir=/tmp/${site_identifier} ;
+if [ ! -d ${cached_site_dir} ]; then mkdir -p ${cached_site_dir} ; fi
 
-echo "INFO: Created work directory: ${workdir}"
-cd ${workdir}
+echo "INFO: Created work directory: ${work_dir}" ;
 
-if [ "${scriptarg}" == "--cache" ];
+if [ "${script_arg}" == "--cached" ];
 then
-   echo "INFO: Syncing last github pull from cache at: ${cachedsitedir}"
-   rsync -avh ${cachedsitedir} .
+   echo "INFO: Syncing last github pull from cache at: ${cached_site_dir}" ;
+   rsync -avh ${cached_site_dir}/* ${work_dir} ;
 else
-   echo "INFO: Pulling down from github and caching to: ${cachedsitedir}"
-   cd ${workdir} ;
-   git clone https://github.com/jasonnerothin/${siteidentifier}.git ;
-   cd ${themedir} ;
-   git clone https://github.com/MarcusVirg/forty ;
-   cd ${currentdir} ;
-   rsync -avh ${localsrcdir} /tmp ;
+   echo "INFO: Pulling down from github and caching to: ${cached_site_dir}" ;
+   cd ${work_dir} ;
+   git clone ${github_url} ${local_srcdir} ;
+   cd ${local_srcdir}/themes ;
+   git clone ${github_theme_url} ;
+   rsync -avh ${local_srcdir}/* ${cached_site_dir} ;
 fi
+rm -rf ${cached_site_dir}/.git* ${cached_site_dir}/aws ${cached_site_dir}/docker
 
-echo "Running ${siteidentifier} from ${localsrcdir} at ${bindiface}:${hugoport}..."
+echo "Running ${site_identifier} from ${local_srcdir} at localhost:${hugo_port} on interface ${bind_iface}..." ;
 sudo docker run \
-    -d --rm -v ${localsrcdir}:/src \
-    -p ${localport}:${hugoport} -u hugo \
+    -d --rm -v ${cached_site_dir}:/src \
+    -p ${host_port}:${hugo_port} -u hugo \
     jguyomard/hugo-builder \
-    hugo server -w --bind=${bindiface} --baseURL ${baseurl} --port ${hugoport}
+    hugo server -w --bind=${bind_iface} --baseURL ${base_url} --port ${hugo_port} ;
+
+sleep 1 ;
+cd ${current_dir} ;
+exit 0 ;
