@@ -1,6 +1,6 @@
 FROM debian:stretch-slim
 
-LABEL maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
+LABEL maintainer="jasonnerothin <jason@ubiquibit.com>"
 
 ENV NGINX_VERSION 1.13.8-1~stretch
 ENV NJS_VERSION   1.13.8.0.1.15-1~stretch
@@ -91,6 +91,9 @@ RUN set -x \
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 	&& ln -sf /dev/stderr /var/log/nginx/error.log
+
+RUN mkdir -p /etc/nginx/logs \
+    && touch /etc/nginx/logs/hugo.access.log ;
 
 EXPOSE 80
 

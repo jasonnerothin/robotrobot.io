@@ -1,19 +1,28 @@
 #!/bin/bash -x
 
-#readonly conffile=nginx.production.conf
-readonly conffile=nginx.localhost.conf
+source 01-localhost.sh
+#source 02-production.sh
 
-readonly localnginxdir=/tmp/nginx/
+readonly nginx_port=80
 
-if [ ! -d ${localnginxdir} ];
+readonly host_nginx_dir=/tmp/nginx/
+readonly host_nginx_conf=${host_nginx_dir}${conf_file}
+readonly host_nginx_log_files=${host_nginx_dir}logs
+
+if [ ! -d ${host_nginx_log_files} ];
 then
-    mkdir -p ${localnginxdir} ;
+    mkdir -pf ${host_nginx_log_files} ;
 fi
 
-readonly localnginxconf=${localnginxdir}${conffile}
-if [ ! -f ${localnginxconf} ];
-then
-    cp -f ./${conffile} ${localnginxdir}/nginx.conf ;
-fi
+cp -f ./${conf_file} ${host_nginx_conf} ;
 
-sudo docker run -d --rm -v ${localnginxdir}:/etc/nginx/:ro -p 8090:80 -t nginx:latest
+#docker run start -d --rm -v ${host_nginx_dir}:/etc/nginx/:ro -p ${upstream_port}:${downstream_port} -t nginx:latest
+
+docker run -it -p ${upstream_port}:${nginx_port} \
+   -v ${host_nginx_conf}:/etc/nginx/nginx.conf:ro \
+   -v ${host_nginx_log_files}:/etc/nginx/logs \
+   -d b7d42a127980 \
+   nginx-debug -g 'daemon off;' ;
+
+#sleep 1 ;
+#exit 0 ;
