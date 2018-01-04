@@ -28,9 +28,9 @@ if [ ! -d ${cached_site_dir} ]; then mkdir -p ${cached_site_dir} ; fi
 
 echo "INFO: Created work directory: ${work_dir}" ;
 
-if [ "${script_arg}" == "--cached" ];
+if [ "${script_arg}" != "--github" ];
 then
-   echo "INFO: Syncing last github pull from cache at: ${cached_site_dir}" ;
+   echo "INFO: Attempting a read from ${cached_site_dir}" ;
 #   rsync -avh ${cached_site_dir}/* ${work_dir} ;
 else
    echo "INFO: Pulling down from github and caching to: ${cached_site_dir}" ;
