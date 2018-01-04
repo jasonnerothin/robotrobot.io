@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # execute this script from the directory containing this script, please
 
@@ -34,13 +34,13 @@ then
    rsync -avh ${cached_site_dir}/* ${work_dir} ;
 else
    echo "INFO: Pulling down from github and caching to: ${cached_site_dir}" ;
-   cd ${work_dir} ;
    git clone ${github_url} ${local_srcdir} ;
    cd ${local_srcdir}/themes ;
    git clone ${github_theme_url} ;
    rsync -avh ${local_srcdir}/* ${cached_site_dir} ;
 fi
-rm -rf ${cached_site_dir}/.git* ${cached_site_dir}/aws ${cached_site_dir}/docker
+rm -rf ${cached_site_dir}/.git* ${cached_site_dir}/aws ${cached_site_dir}/docker \
+   ${cached_site_dir}/themes/.git* ${cached_site_dir}/themes/.git ${cached_site_dir}/themes/exampleSite ;
 
 echo "Running ${site_identifier} from ${local_srcdir} at localhost:${hugo_port} on interface ${bind_iface}..." ;
 sudo docker run \
