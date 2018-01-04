@@ -31,7 +31,7 @@ echo "INFO: Created work directory: ${work_dir}" ;
 if [ "${script_arg}" == "--cached" ];
 then
    echo "INFO: Syncing last github pull from cache at: ${cached_site_dir}" ;
-   rsync -avh ${cached_site_dir}/* ${work_dir} ;
+#   rsync -avh ${cached_site_dir}/* ${work_dir} ;
 else
    echo "INFO: Pulling down from github and caching to: ${cached_site_dir}" ;
    git clone ${github_url} ${local_srcdir} ;
@@ -43,12 +43,14 @@ rm -rf ${cached_site_dir}/.git* ${cached_site_dir}/aws ${cached_site_dir}/docker
    ${cached_site_dir}/themes/.git* ${cached_site_dir}/themes/.git ${cached_site_dir}/themes/exampleSite ;
 
 echo "Running ${site_identifier} from ${local_srcdir} at localhost:${hugo_port} on interface ${bind_iface}..." ;
-sudo docker run \
+set -x
+docker run --network=tonowhere \
     -d --rm -v ${cached_site_dir}:/src \
     -p ${host_port}:${hugo_port} -u hugo \
     jguyomard/hugo-builder \
     hugo server -w --bind=${bind_iface} --baseURL ${base_url} --port ${hugo_port} ;
 
+set +x
 sleep 1 ;
 cd ${current_dir} ;
 exit 0 ;
