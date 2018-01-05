@@ -10,8 +10,3 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 sudo apt-get update
 sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu
-
-# setup nginx
-
-
-sudo mkdir -p ${nginxlocalconf}

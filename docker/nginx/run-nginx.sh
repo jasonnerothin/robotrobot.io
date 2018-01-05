@@ -1,7 +1,10 @@
 #!/bin/bash -x
 
-source 01-localhost.sh
-#source 02-production.sh
+# execute this script from the directory containing this script, please
+
+source ./01-localhost.sh
+#readonly conf_file=nginx.conf
+#source 02-pcoroduction.sh
 
 readonly nginx_port=80
 
@@ -16,13 +19,12 @@ fi
 
 cp -f ./${conf_file} ${host_nginx_conf} ;
 
-#docker run start -d --rm -v ${host_nginx_dir}:/etc/nginx/:ro -p ${upstream_port}:${downstream_port} -t nginx:latest
-
-docker run -it -p ${upstream_port}:${nginx_port} \
+set -x
+docker run --network=tonowhere -it -p 80:80 \
    -v ${host_nginx_conf}:/etc/nginx/nginx.conf:ro \
-   -v ${host_nginx_log_files}:/etc/nginx/logs \
-   -d b7d42a127980 \
+   nginx-debug
    nginx-debug -g 'daemon off;' ;
+set +x
 
-#sleep 1 ;
-#exit 0 ;
+sleep 1 ;
+exit 0 ;

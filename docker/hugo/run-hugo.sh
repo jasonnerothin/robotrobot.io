@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# execute this script from the directory containing this script, please
-
 readonly script_arg="$1"
 readonly current_dir=$(pwd)
 
@@ -46,11 +44,11 @@ echo "Running ${site_identifier} from ${local_srcdir} at localhost:${hugo_port} 
 set -x
 docker run --network=tonowhere \
     -d --rm -v ${cached_site_dir}:/src \
-    -p ${host_port}:${hugo_port} -u hugo \
+    -u hugo \
     jguyomard/hugo-builder \
     hugo server -w --bind=${bind_iface} --baseURL ${base_url} --port ${hugo_port} ;
-
 set +x
+
 sleep 1 ;
 cd ${current_dir} ;
 exit 0 ;
