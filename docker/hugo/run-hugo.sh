@@ -43,10 +43,10 @@ rm -rf ${cached_site_dir}/.git* ${cached_site_dir}/aws ${cached_site_dir}/docker
 echo "Running ${site_identifier} from ${local_srcdir} at localhost:${hugo_port} on interface ${bind_iface}..." ;
 set -x
 docker run --network=tonowhere \
-    -d --rm -v ${cached_site_dir}:/src \
-    -u hugo \
-    jguyomard/hugo-builder \
-    hugo server -w --bind=${bind_iface} --baseURL ${base_url} --port ${hugo_port} ;
+    --rm -v ${cached_site_dir}:/src \
+    -u hugo --name hugo \
+    -d jguyomard/hugo-builder \
+    hugo server -w --bind=${bind_iface} --baseURL http://hugo0 --port ${hugo_port} ;
 set +x
 
 sleep 1 ;

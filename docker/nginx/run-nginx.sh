@@ -20,9 +20,9 @@ fi
 cp -f ./${conf_file} ${host_nginx_conf} ;
 
 set -x
-docker run --network=tonowhere -it -p 80:80 \
+docker run --network=tonowhere -it -p 80:80 -p 1414:1414 --name nginx \
    -v ${host_nginx_conf}:/etc/nginx/nginx.conf:ro \
-   nginx-debug
+   -d nginx-debug \
    nginx-debug -g 'daemon off;' ;
 set +x
 
