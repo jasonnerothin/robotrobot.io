@@ -23,7 +23,7 @@ googleAnalytics = ""
   # Link custom assets relative to /static
   custom_css = []
   custom_js  = []
-  favicon    = "favicon.ico"
+  favicon    = "img/favicon.ico"
 
   # Just a custom image variable, please define it in .md files for content.
   image = ""
