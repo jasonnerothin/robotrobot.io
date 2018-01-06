@@ -8,7 +8,7 @@ catchy: "Icebots Daycamp"
 subtitle: "Building robots in the heart of winter."
 when: "January 15, 2018"
 who: "Ages: 10+"
-where: "University Research Park, 505 South Rosa Rd, Madison WI 53719"
+where: "University Research Park, 505 South Rosa Rd, Madison WI"
 howmuch: "$256.00"
 ---
 A day-long, interactive robot creation experience with demo mixer at the end of the day.
