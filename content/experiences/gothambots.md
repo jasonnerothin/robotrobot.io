@@ -1,7 +1,6 @@
 ---
 title: "gothambots"
 date: 2017-08-27T17:23:05-06:00
-slug: "experiences"
 logo: "gothambots.jpg"
 champ: 
 draft: false

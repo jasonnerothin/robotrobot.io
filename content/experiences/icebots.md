@@ -1,7 +1,6 @@
 ---
 title: "icebots"
 date: 2017-12-29T13:42:01-06:00
-slug: "experiences"
 logo: "icebots.png"
 champ: "hilary.jpg"
 draft: false
@@ -15,7 +14,6 @@ city: "Madison WI"
 howmuch: "$256.00"
 summary: "An interactive robot creation experience with demo session at day's end."
 ---
-
 
 #### Outputs
 

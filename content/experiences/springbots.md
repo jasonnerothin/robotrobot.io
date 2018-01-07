@@ -1,7 +1,6 @@
 ---
 title: "springbots"
 date: 2017-08-29T17:23:05-06:00
-slug: "experiences"
 logo: "springbots.jpg"
 champ: "hilary.jpg"
 draft: false
