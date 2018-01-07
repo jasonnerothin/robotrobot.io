@@ -3,3 +3,7 @@
 *.swp
 .idea
 .idea/*
+
+prod-hugo.sh
+prod-nginx.sh
+prod.nginx.conf
