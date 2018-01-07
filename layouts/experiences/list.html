@@ -14,9 +14,6 @@
 
         <section id="banner" class="style2">
             <div class="inner">
-                        <span class="image">
-                            <img src="{{ .Site.Params.baseURL }}/img/{{ .Slug }}/{{ .Params.image }}" alt=""/>
-                        </span>
                 <header class="major">
                     <h1>{{ .Title }}</h1>
                 </header>
@@ -26,29 +23,28 @@
             </div>
         </section>
 
-        <section id="two" class="spotlights" style="padding-top:8em;">
+        <section id="two" class="spotlights" style="padding-top:1.5em;">
             {{ range .Pages }}
             <section>
-                <a href="{{ .Title }}" class="image">
-                    <img src="{{ .Site.Params.baseURL }}/img/{{ .Slug }}/{{ .Params.image }}" alt=""
-                         data-position="center center"/>
-                </a>
+                <div class="image" style="padding: 0% 10%">
+                    <img src="{{ .Site.Params.baseURL }}/img/experiences/{{ .Params.logo }}" alt=""
+                         data-position="center" style=""/>
+                </div>
                 <div class="content">
                     <div class="inner">
                         <header class="major">
                             <p>{{ .Params.catchy }}</p>
+                            <p>{{ .Params.subtitle }}</p>
                         </header>
-                        <p>{{ .Content }}</p>
-
-                        <dl>
-                            <dt>Details</dt>
-                            <dd>when: {{ .Params.when }}</dd>
-                            <dd>who: {{ .Params.who }}</dd>
-                            <dd>where: {{ .Params.where }}</dd>
-                            <!--li>how much: {{ .Params.howmuch }}</li-->
-                        </dl>
+                        <div>
+                            <p>{{.Params.summary}}</p>
+                            <p> {{ .Params.when }} <br/>
+                                {{ .Params.addr0 }} <br/>
+                                {{ .Params.city }}
+                            </p>
+                        </div>
                         <ul class="actions">
-                            <li><a href="{{ .Title }}" class="button disabled">Register</a></li>
+                            <li><a href="{{ .Title }}" class="button">Details</a></li>
                         </ul>
                     </div>
                 </div>

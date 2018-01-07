@@ -2,21 +2,26 @@
 title: "icebots"
 date: 2017-12-29T13:42:01-06:00
 slug: "experiences"
-image: "icebots.png"
+logo: "icebots.png"
+champ: "hilary.jpg"
 draft: false
-catchy: "Icebots Daycamp"
-subtitle: "Building robots in the heart of winter."
+catchy: "Icebots Day Camp"
+subtitle: "Robots in the heart of winter"
 when: "January 15, 2018"
 who: "Ages: 10+"
-where: "University Research Park, 505 South Rosa Rd, Madison WI"
+addr0: "University Research Park"
+addr1: "505 South Rosa Rd"
+city: "Madison WI"
 howmuch: "$256.00"
+summary: "An interactive robot creation experience with demo session at day's end."
 ---
-A day-long, interactive robot creation experience with demo mixer at the end of the day.
 
-Deliverables:
 
+#### Outputs
+
+- Programming skills
+- Demo session for parents at end of day
 - Robot assembly kit (reusable)
-- Knowledge (reusable)
 - T-shirt
 - Discount for [springbots](#springbots)
 
