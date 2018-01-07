@@ -3,11 +3,9 @@
 readonly script_arg="$1"
 readonly current_dir=$(pwd)
 
-readonly host_port=2718
 readonly hugo_port=1414
 
 readonly bind_iface=0.0.0.0
-readonly prod_siteidentifier='robotrobot.io'
 readonly dev_site_identifier=localhost
 readonly github_url=https://github.com/jasonnerothin/robotrobot.io.git
 readonly github_theme_url=https://github.com/MarcusVirg/forty
@@ -46,7 +44,7 @@ docker run --network=tonowhere \
     --rm -v ${cached_site_dir}:/src \
     -u hugo --name hugo \
     -d jguyomard/hugo-builder \
-    hugo server -w --bind=${bind_iface} --baseURL http://hugo0 --port ${hugo_port} ;
+    hugo server -w --bind=${bind_iface} --baseURL http://${site_identifier} --port ${hugo_port} ;
 set +x
 
 sleep 1 ;

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 # execute this script from the directory containing this script, please
 
